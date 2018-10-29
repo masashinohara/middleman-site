@@ -1,8 +1,11 @@
 <div class="navbar-wagon">
   <!-- Logo -->
-  <a href="/middleman-site" class="navbar-wagon-brand">
+<!--   <a href="/middleman-site" class="navbar-wagon-brand">
     <img src="images/logo.png" alt="logo">
-  </a>
+  </a> -->
+  <% link_to "/", class: "navbar-wagon-brand" do %>
+    <img src="images/logo.png" alt="logo">
+  <% end %>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
