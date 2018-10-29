@@ -1,0 +1,24 @@
+---
+title: Le Wagon - Middleman - Team
+---
+
+<div id="about">
+  <div class="team-content">
+    <h1 class="text-center">Meet the team</h1>
+    <ul class="list-inline">
+      <% data.students.each do |student| %>
+        <li>
+          <img src="images/<%= student.name.split[0].downcase %>.jpg" alt="<%= student.name.split[0].downcase %>" class="img-circle" width="150px">
+          <h2><%= student.name %></h2>
+          <p>
+            <a href="http://github.com/<%= student.username %>">
+              <i class="fab fa-github">
+                <%= student.username %>
+              </i>
+            </a>
+          </p>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
